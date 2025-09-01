@@ -1,0 +1,9 @@
+Para o termino da UC foi solicitado a criação de um algoritmo com tema a ser definido pela duplas de alunos.
+Eu e meu cólega(DOUGLAS N) decidimos criar um algoritmo para realizar a Cifra de César, um tipo de criptografia simples que atráves da troca de posições das letras do alfabeto seria capaz de passar uma mensagem sem que seus inimigos a entendessem, foi muito ultilizada pelos comandantes romanos durante suas guerra.
+Como funciona: nos pegamos por exemplo a letra "A" e nossa chave para encriptar a mensagem é o número inteiro 3, nos vamos mudar a posição de "A" em 3 casas do alfabeto, no caso "A" seria trocado pela letra "D" e todas as letras seguiria a mesma regra.
+O código:
+  Primeiramente pegamos uma linha de caracter (abcdefghijklmnopqrstuvwxyz0123456789) note que nos temos números, oque não tinha na cifra original que adiciona a possibilidade de usarmos mensagens com números no meio e deixar a encriptação mais "complexa",
+depois nossa linha é separada em caracteres individuais que vão ser colocadas em uma matriz[1..36] [1..2] chamada "alfabeto", como pode ver nos fomos muito criativos.
+  Segundo nos damos as opções para nosso usuário, ele pode fazer a encriptação/cifragem da "mensagem" onde vai ser pedido a mesma para ser digitada e um "passo" que vai servir como chava de encriptação. Tem a opção de decifragem, que vai solicitar os mesmo dados e por fim uma opção para fecha o programa.
+
+TERMINAR A DESCRIÇÂO.
