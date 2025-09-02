@@ -2,8 +2,25 @@ Para o termino da UC foi solicitado a criação de um algoritmo com tema a ser d
 Eu e meu cólega(DOUGLAS N) decidimos criar um algoritmo para realizar a Cifra de César, um tipo de criptografia simples que atráves da troca de posições das letras do alfabeto seria capaz de passar uma mensagem sem que seus inimigos a entendessem, foi muito ultilizada pelos comandantes romanos durante suas guerra.
 Como funciona: nos pegamos por exemplo a letra "A" e nossa chave para encriptar a mensagem é o número inteiro 3, nos vamos mudar a posição de "A" em 3 casas do alfabeto, no caso "A" seria trocado pela letra "D" e todas as letras seguiria a mesma regra.
 O código:
-  Primeiramente pegamos uma linha de caracter (abcdefghijklmnopqrstuvwxyz0123456789) note que nos temos números, oque não tinha na cifra original que adiciona a possibilidade de usarmos mensagens com números no meio e deixar a encriptação mais "complexa",
-depois nossa linha é separada em caracteres individuais que vão ser colocadas em uma matriz[1..36] [1..2] chamada "alfabeto", como pode ver nos fomos muito criativos.
-  Segundo nos damos as opções para nosso usuário, ele pode fazer a encriptação/cifragem da "mensagem" onde vai ser pedido a mesma para ser digitada e um "passo" que vai servir como chava de encriptação. Tem a opção de decifragem, que vai solicitar os mesmo dados e por fim uma opção para fecha o programa.
+  
+Primeiro: pegamos uma linha de caracter (abcdefghijklmnopqrstuvwxyz0123456789) note que nos temos números, oque não tinha na cifra original que adiciona a possibilidade de usarmos mensagens com números no meio e deixar a encriptação mais "complexa",
+depois nossa linha é separada em caracteres individuais que vão ser colocados na coluna 1 de uma matriz[1..36] [1..2] chamada "alfabeto", como pode ver nos fomos muito criativos.
+  
+Segundo: nos damos as opções para nosso usuário, ele pode fazer a encriptação/cifragem da "mensagem" onde vai ser pedido a mesma para ser digitada e um "passo" que vai servir como chava de encriptação. Tem a opção de decifragem, que vai solicitar os mesmo dados e por fim uma opção para fecha o programa.  
+  
+Terceiro: em ambos os casos (Cifragem/Decifragem) após a leitura da "chave" o algoritmo chama o procedimento "tabela_alfabeto_com_chave" que ele vai montar uma segunda coluna na nossa matriz alfabeto, mas em vex de colocar a letra "A" na primeira linha vai ser feito o calculo do passo com a chave
+e será colocado a letra/número que tiver caído. 
+  Exemplo:
+    chave = 3
+    tabale alfabeto: ["A"] ["D"]
+                     ["B"] ["E"]
+Com a matriz alfabeto montada basta reescrever nossa mensagem.
 
-TERMINAR A DESCRIÇÂO.
+Quarto: pegamos nossa mensagem e também separamos as letras em vetor[1..20].
+
+Quinto: nos pegamos nossa matriz alfabeto e fazemos um teste na primeira coluna, verificamos com o nosso vetor as letras que correspondem com a primeira coluna do alfabeto, caso sejam iguais nos cópiamos a letra que está na segunda coluna da matriz.
+A decifragem faz um teste parecido só que verificado a coluna 2 e cópiando a letra da coluna 1.
+  
+Sexto: por fim o sistema escreve na tela como a mesagem ficou após a cifragem/decifragem.
+
+Obs: o conceito do projeto é simples mas foi bem divertido usar as funções, mesmo que limitadas, para realizar a manipulação dos caracteres.
