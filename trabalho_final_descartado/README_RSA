@@ -1,0 +1,5 @@
+  Esse era um trabalho final "completo" que não pode ser usado para avaliação, a ideia do algoritmo foi de fazer uma encriptação através do método RSA.
+  O RSA é feito através de fórmulas matemáticas usando números primos, a ideia principal é pegar dois números primos muitos grandes(mais que 200 casas) e por meio da fatoração primal realizar a encriptação e para decriptar a mensagem é preciso fazer a divisão modular,
+mas ai que vem o desafio, é muito "custoso" para um sistema realizar essa divisão já que se trata de números muitos grandes.
+  O projeto foi todo desenvolvido e "teoricamente" está funcionando, mas por uma limitação da ferramenta visualg o programa não conseguia terminar sua tarefa, 
+por precisarmos multiplica e dividir números muito grandes os dados de tipo inteiros e reais não conseguiam armazenar o tamanho dos números, assim o trabalho foi deixado de lado.
